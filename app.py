@@ -3,12 +3,10 @@ import tkinter.ttk as ttk
 from tkinter import scrolledtext, messagebox
 
 from rdflib import Graph
-from ttkthemes import ThemedTk
 
 
 class App:
-    "http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20"
-    GRAPH_IRI: str = "http://www.w3.org/People/Berners-Lee/card"
+    GRAPH_IRI: str = "/home/egorp/Учеба/Модели ИС/Охрана_природы_исправленная.rdf"
     
     def __init__(self):
         self._set_graph()
@@ -24,7 +22,7 @@ class App:
 
     def _set_root(self) -> None:
         '''Создание главного окна'''
-        self.__root = ThemedTk(theme="arc")
+        self.__root = tk.Tk()
         self.__root.title("Охрана Природы")
     
     def _set_output_field(self) -> None:
@@ -71,20 +69,34 @@ class App:
         '''Создание кнопок для выполнения запросов'''
         predefined_queries: dict[str, str] = {
             "Активисты" : """
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            PREFIX ont: <http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#>
             SELECT ?Активист
 	            WHERE {?Активист rdf:type ont:Activist}
             """,
             "Материалы" : """
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            PREFIX ont: <http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#>
             SELECT ?материал ?название
 	            WHERE { ?материал ont:Название_материала ?название }
             """,
             "Законы" : """
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            PREFIX owl: <http://www.w3.org/2002/07/owl#>
+            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            PREFIX ont: <http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#>
             SELECT ?закон ?проблема
 	            WHERE {?закон ont:Закон_о_Проблеме ?проблема}
             """
         }
         
-        i = 1
         for query_name, query in predefined_queries.items():
             button = ttk.Button(self.__root, text=query_name, command=lambda q=query: self._run_predefined_query(q))
             button.pack(
