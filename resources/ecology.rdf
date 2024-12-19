@@ -1,0 +1,695 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20/"
+     xml:base="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-20="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Активист_в_Организации -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Активист_в_Организации">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Активист_на_Митинге -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Активист_на_Митинге">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Meeting"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Закон_о_Проблеме -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Закон_о_Проблеме">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Материал_Активиста -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Материал_Активиста">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Материал_о_Проблеме -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Материал_о_Проблеме">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Митинг_для_проблемы -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Митинг_для_проблемы">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Meeting"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Адрес_организации -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Адрес_организации">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Дата_митинга -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Дата_митинга">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Meeting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Дата_принятия_закона -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Дата_принятия_закона">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Дата_рождения_активиста -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Дата_рождения_активиста">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Контакты_организации -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Контакты_организации">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Лозунг_митинга -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Лозунг_митинга">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Meeting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Место_митинга -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Место_митинга">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Meeting"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Название_закона -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Название_закона">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Название_материала -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Название_материала">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Название_организации -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Название_организации">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Направленность_деятельности -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Направленность_деятельности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Учредитель_организации -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Учредитель_организации">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#ФИО_активиста -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#ФИО_активиста">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Meeting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Meeting"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_act -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_act">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <untitled-ontology-20:Активист_в_Организации rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_org"/>
+        <untitled-ontology-20:Дата_рождения_активиста rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2004-04-12T00:00:00</untitled-ontology-20:Дата_рождения_активиста>
+        <untitled-ontology-20:ФИО_активиста>Анна Иванова</untitled-ontology-20:ФИО_активиста>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+        <untitled-ontology-20:Закон_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_pro"/>
+        <untitled-ontology-20:Дата_принятия_закона rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-06-05T00:00:00</untitled-ontology-20:Дата_принятия_закона>
+        <untitled-ontology-20:Название_закона>О государственном регулировании в области генно-инженерной деятельности</untitled-ontology-20:Название_закона>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_mat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <untitled-ontology-20:Материал_Активиста rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_act"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_pro"/>
+        <untitled-ontology-20:Название_материала>Как ГМО спасают планету и почему люди этому мешают</untitled-ontology-20:Название_материала>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_meet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_meet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Meeting"/>
+        <untitled-ontology-20:Митинг_для_проблемы rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_pro"/>
+        <untitled-ontology-20:Дата_митинга rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-04-07T00:00:00</untitled-ontology-20:Дата_митинга>
+        <untitled-ontology-20:Лозунг_митинга>Стоп ШИЕС</untitled-ontology-20:Лозунг_митинга>
+        <untitled-ontology-20:Место_митинга>г. Архангельск</untitled-ontology-20:Место_митинга>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+        <untitled-ontology-20:Адрес_организации>Московская область, г. Шишкин, ул. Лесная, д. 10</untitled-ontology-20:Адрес_организации>
+        <untitled-ontology-20:Контакты_организации>Телефон: +71829388999 Почтовый индекс: 366122 Email: shishkin.les@mail.ru</untitled-ontology-20:Контакты_организации>
+        <untitled-ontology-20:Название_организации>ООО Шишкин лес</untitled-ontology-20:Название_организации>
+        <untitled-ontology-20:Учредитель_организации>Учиха Мадара Идзума</untitled-ontology-20:Учредитель_организации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_pro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+        <untitled-ontology-20:Направленность_деятельности>ГМО</untitled-ontology-20:Направленность_деятельности>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_act -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_act">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <untitled-ontology-20:Активист_в_Организации rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_org"/>
+        <untitled-ontology-20:Дата_рождения_активиста rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-04-12T00:00:00</untitled-ontology-20:Дата_рождения_активиста>
+        <untitled-ontology-20:ФИО_активиста>Медведев Жорес Александрович</untitled-ontology-20:ФИО_активиста>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+        <untitled-ontology-20:Закон_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_pro"/>
+        <untitled-ontology-20:Дата_принятия_закона rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-11-21T00:00:00</untitled-ontology-20:Дата_принятия_закона>
+        <untitled-ontology-20:Название_закона>Об использовании атомной энергии</untitled-ontology-20:Название_закона>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_mat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <untitled-ontology-20:Материал_Активиста rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_act"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_pro"/>
+        <untitled-ontology-20:Название_материала>Атомная катастрофа на Урале</untitled-ontology-20:Название_материала>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+        <untitled-ontology-20:Адрес_организации>г. Омск, ул. Северная, д. 5</untitled-ontology-20:Адрес_организации>
+        <untitled-ontology-20:Контакты_организации>WhatsApp: 89991223243</untitled-ontology-20:Контакты_организации>
+        <untitled-ontology-20:Название_организации>ООО БайкалФорестГрупп</untitled-ontology-20:Название_организации>
+        <untitled-ontology-20:Учредитель_организации>Сенджу Хирузен Хаширама</untitled-ontology-20:Учредитель_организации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_pro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+        <untitled-ontology-20:Направленность_деятельности>Атомная энергетика</untitled-ontology-20:Направленность_деятельности>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_act -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_act">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <untitled-ontology-20:Активист_в_Организации rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_org"/>
+        <untitled-ontology-20:Дата_рождения_активиста rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-12-10T00:00:00</untitled-ontology-20:Дата_рождения_активиста>
+        <untitled-ontology-20:ФИО_активиста>Яковенко Василь Тимофеевич</untitled-ontology-20:ФИО_активиста>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+        <untitled-ontology-20:Закон_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_pro"/>
+        <untitled-ontology-20:Дата_принятия_закона rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-11-16T00:00:00</untitled-ontology-20:Дата_принятия_закона>
+        <untitled-ontology-20:Название_закона>Водный кодекс Российской Федерации</untitled-ontology-20:Название_закона>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_mat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <untitled-ontology-20:Материал_Активиста rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_act"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_pro"/>
+        <untitled-ontology-20:Название_материала>Вода — чудо из чудес</untitled-ontology-20:Название_материала>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+        <untitled-ontology-20:Адрес_организации>Страна Огня, д. Коноха, ул. Хокаге, д. 2</untitled-ontology-20:Адрес_организации>
+        <untitled-ontology-20:Контакты_организации>Тел: 89993332202</untitled-ontology-20:Контакты_организации>
+        <untitled-ontology-20:Название_организации>ООО Скрытый Лист</untitled-ontology-20:Название_организации>
+        <untitled-ontology-20:Учредитель_организации>Сенджу Хаширама</untitled-ontology-20:Учредитель_организации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_pro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+        <untitled-ontology-20:Направленность_деятельности>Водоёмы</untitled-ontology-20:Направленность_деятельности>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_act -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_act">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <untitled-ontology-20:Активист_в_Организации rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_org"/>
+        <untitled-ontology-20:Дата_рождения_активиста rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2001-08-12T00:00:00</untitled-ontology-20:Дата_рождения_активиста>
+        <untitled-ontology-20:ФИО_активиста>Монсон Шон</untitled-ontology-20:ФИО_активиста>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+        <untitled-ontology-20:Закон_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_pro"/>
+        <untitled-ontology-20:Дата_принятия_закона rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-04-24T00:00:00</untitled-ontology-20:Дата_принятия_закона>
+        <untitled-ontology-20:Название_закона>О животном мире</untitled-ontology-20:Название_закона>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_mat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <untitled-ontology-20:Материал_Активиста rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_act"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_pro"/>
+        <untitled-ontology-20:Название_материала>Земляне</untitled-ontology-20:Название_материала>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+        <untitled-ontology-20:Адрес_организации>г. Москва, ул. Линейная, д. 1, кв. 3</untitled-ontology-20:Адрес_организации>
+        <untitled-ontology-20:Контакты_организации>Почтовый индекс: 366444</untitled-ontology-20:Контакты_организации>
+        <untitled-ontology-20:Название_организации>ООО Гринпис</untitled-ontology-20:Название_организации>
+        <untitled-ontology-20:Учредитель_организации>Яковлев Мирон Янович</untitled-ontology-20:Учредитель_организации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_pro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+        <untitled-ontology-20:Направленность_деятельности>Животные</untitled-ontology-20:Направленность_деятельности>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_act -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_act">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <untitled-ontology-20:Активист_в_Организации rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_org"/>
+        <untitled-ontology-20:Дата_рождения_активиста rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1956-05-03T00:00:00</untitled-ontology-20:Дата_рождения_активиста>
+        <untitled-ontology-20:ФИО_активиста>Герттен Фредрик</untitled-ontology-20:ФИО_активиста>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+        <untitled-ontology-20:Закон_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_pro"/>
+        <untitled-ontology-20:Дата_принятия_закона rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1997-07-19T00:00:00</untitled-ontology-20:Дата_принятия_закона>
+        <untitled-ontology-20:Название_закона>О безопасном обращении с пестицидами и агрохимикатами</untitled-ontology-20:Название_закона>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_mat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <untitled-ontology-20:Материал_Активиста rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_act"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_pro"/>
+        <untitled-ontology-20:Название_материала>Бананы!*</untitled-ontology-20:Название_материала>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_org -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_org">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Organisation"/>
+        <untitled-ontology-20:Адрес_организации>г. Санкт-Петербург, ул. Невская, д. 2</untitled-ontology-20:Адрес_организации>
+        <untitled-ontology-20:Контакты_организации>Телефон: 79882220393</untitled-ontology-20:Контакты_организации>
+        <untitled-ontology-20:Название_организации>ООО Стоп ойл</untitled-ontology-20:Название_организации>
+        <untitled-ontology-20:Учредитель_организации>Мильчаков Алексей Юрьевич</untitled-ontology-20:Учредитель_организации>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_pro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+        <untitled-ontology-20:Направленность_деятельности>Химикаты и пестициды</untitled-ontology-20:Направленность_деятельности>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_act -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_act">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <untitled-ontology-20:Дата_рождения_активиста rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1961-01-21T00:00:00</untitled-ontology-20:Дата_рождения_активиста>
+        <untitled-ontology-20:ФИО_активиста>Хейнс Тодд</untitled-ontology-20:ФИО_активиста>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_law -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_law">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Law"/>
+        <untitled-ontology-20:Закон_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_pro"/>
+        <untitled-ontology-20:Дата_принятия_закона rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-03-14T00:00:00</untitled-ontology-20:Дата_принятия_закона>
+        <untitled-ontology-20:Название_закона>Об особо охраняемых природных территориях</untitled-ontology-20:Название_закона>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_mat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <untitled-ontology-20:Материал_Активиста rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_act"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_pro"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_pro"/>
+        <untitled-ontology-20:Название_материала>Тёмные воды</untitled-ontology-20:Название_материала>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_pro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_pro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Problem"/>
+        <untitled-ontology-20:Направленность_деятельности>Леса и заповедники</untitled-ontology-20:Направленность_деятельности>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id7_act -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id7_act">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <untitled-ontology-20:Дата_рождения_активиста rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1985-06-21T00:00:00</untitled-ontology-20:Дата_рождения_активиста>
+        <untitled-ontology-20:ФИО_активиста>Лана Дель Рей</untitled-ontology-20:ФИО_активиста>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id7_mat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id7_mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <untitled-ontology-20:Материал_Активиста rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id7_act"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_pro"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id6_pro"/>
+        <untitled-ontology-20:Название_материала>Chemtrails over the country club</untitled-ontology-20:Название_материала>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id8_act -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id8_act">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <untitled-ontology-20:Дата_рождения_активиста rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1942-05-22T00:00:00</untitled-ontology-20:Дата_рождения_активиста>
+        <untitled-ontology-20:ФИО_активиста>Качинский Теодор</untitled-ontology-20:ФИО_активиста>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id8_mat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id8_mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <untitled-ontology-20:Материал_Активиста rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id8_act"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id1_pro"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id2_pro"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id3_pro"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id4_pro"/>
+        <untitled-ontology-20:Материал_о_Проблеме rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id5_pro"/>
+        <untitled-ontology-20:Название_материала>Индустриальное общество и его будущее</untitled-ontology-20:Название_материала>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id9_act -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id9_act">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Activist"/>
+        <untitled-ontology-20:Дата_рождения_активиста rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1954-04-23T00:00:00</untitled-ontology-20:Дата_рождения_активиста>
+        <untitled-ontology-20:ФИО_активиста>Мур Майкл</untitled-ontology-20:ФИО_активиста>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id9_mat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id9_mat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#Material"/>
+        <untitled-ontology-20:Материал_Активиста rdf:resource="http://www.semanticweb.org/egorp/ontologies/2024/11/untitled-ontology-20#id9_act"/>
+        <untitled-ontology-20:Название_материала>Планета людей</untitled-ontology-20:Название_материала>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
