@@ -3,7 +3,7 @@ import tkinter.ttk as ttk
 import tkinter.scrolledtext as st
 import tkinter.messagebox as msg
 
-from ttkthemes import ThemedTk
+import customtkinter as ctk
 from rdflib import Graph
 
 
@@ -45,8 +45,12 @@ class App:
     }
     
     def __init__(self):
-        self.root = ThemedTk(theme="ubuntu")
+        ctk.set_appearance_mode('light')
+        ctk.set_widget_scaling(1.4)
+        
+        self.root = ctk.CTk()
         self.root.title("Охрана Природы")
+        self.root.geometry("+500+300")
         
         self.graph = Graph()
         self.graph.parse(self.GRAPH_IRI)
@@ -55,8 +59,8 @@ class App:
         self.set_predefined()
     
     def set_query_txt(self) -> None:
-        frame = ttk.Frame(self.root)
-        frame.pack(side="top")
+        frame = ctk.CTkFrame(self.root)
+        frame.pack(side="top", expand=True, fill='both')
         
         self.query_txt = st.ScrolledText(
             frame, 
@@ -64,38 +68,40 @@ class App:
         )
         self.query_txt.grid(row=0, column=1, rowspan=4, padx=10, pady=10)
         
-        ttk.Button(
+        ctk.CTkButton(
             frame, 
             text="Выполнить запрос",
             command=lambda: self.execute_query(self.query_txt.get("1.0", tk.END).strip())
         ).grid(row=1, column=0, padx=10, pady=10)
         
         self.table_check_var = tk.IntVar(value=1)
-        ttk.Checkbutton(
+        ctk.CTkCheckBox(
             frame, text="В виде таблицы", variable=self.table_check_var
         ).grid(row=2, column=0, padx=10, pady=10)
         
         self.prefixes_check_var = tk.IntVar(value=0)
-        ttk.Checkbutton(
+        ctk.CTkCheckBox(
             frame, text="Без префиксов", variable=self.prefixes_check_var
         ).grid(row=3, column=0, padx=10, pady=10)
         
     def set_predefined(self) -> None:
-        frame = ttk.Frame(self.root)
-        frame.pack(side="top")
+        frame = ctk.CTkFrame(self.root)
+        frame.pack(side="bottom", expand=True, fill='both')
         
+        buttons = 0
         for title, query in self.QUERIES.items():
-            ttk.Button(
+            ctk.CTkButton(
                 frame, 
                 text=title,
                 command=lambda q=query: self.query_txt.insert('1.0', q.strip())
-            ).pack(side='left', padx=5, pady=5)
+            ).grid(row=0, column=buttons, padx=5, pady=5)
+            buttons += 1
         
-        ttk.Button(
+        ctk.CTkButton(
             frame, 
             text="Очистить",
             command=self.clear_query
-        ).pack(side='left', padx=5, pady=5)
+        ).grid(row=0, column=buttons, padx=5, pady=5)
         
     def clear_query(self) -> None:
         self.query_txt.delete("1.0", tk.END)
