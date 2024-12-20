@@ -94,14 +94,14 @@ class App:
                 frame, 
                 text=title,
                 command=lambda q=query: self.query_txt.insert('1.0', q.strip())
-            ).grid(row=0, column=buttons, padx=5, pady=5)
+            ).pack(side='left', padx=5, pady=5)
             buttons += 1
         
         ctk.CTkButton(
             frame, 
             text="Очистить",
             command=self.clear_query
-        ).grid(row=0, column=buttons, padx=5, pady=5)
+        ).pack(side='right', padx=5, pady=5)
         
     def clear_query(self) -> None:
         self.query_txt.delete("1.0", tk.END)
@@ -117,7 +117,7 @@ class App:
             
             if not results.vars:
                 if self.table_check_var.get() == 1:
-                    self.create_results_table(['ASK'], [[results.askAnswer]])
+                    self.create_results_table([' - '], [[results.askAnswer]])
                 else:
                     self.create_results_text([[results.askAnswer]])
                 return
